@@ -155,6 +155,7 @@ def main(args: Namespace) -> None:
         model_dtype = torch.float32
     print(f'Using {model_dtype=}')
 
+    print(f'\nprompt delimter {args.prompt_delimiter=}...')
     # Load prompts
     prompt_strings = utils.load_prompts(args.prompts, args.prompt_delimiter)
 
